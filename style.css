@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+
+* {
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: 'Fredoka One', cursive;
+}
+
+main {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+    background-color: black;
+}
+
+h1 {
+    color: white;
+    font-size: 3rem;
+    letter-spacing: 5px;
+    font-weight: 400;
+}
+
+#interface {
+    display: flex;
+    flex-wrap: wrap;
+    width: 280px;
+    gap: 5px;
+    background-color: black;
+}
+
+.square {
+    width: 90px;
+    height: 90px;
+    background-color: white;
+    display: grid;
+    place-items: center;
+    font-size: 4rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.square:hover {
+    box-shadow: 0px 0px 50px #04d9ff;
+    background-color: #04d9ff;
+}
+
+#result {
+    width: 300px;
+    height: 300px;
+    background-color: rgba(0, 0, 0, 0.699);
+    position: absolute;
+    transform: translateY(10px);
+    display: none;
+    color: white;
+}
+
+#result.appear {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 0 0px 10px #04d9ff;
+}
+
+.winner {
+    background-color: #04d9ff;
+}
+
+#reset {
+    padding: 5px 10px;
+    cursor: pointer;
+    visibility: hidden;
+}
+
+#reset:hover {
+    outline: 1px solid white;
+    background-color: #04d9ff;
+}
+
+#reset:active {
+    background-color: #000000;
+    color: white;
+    box-shadow: 0 0 8px #04d9ff;
+}
+
+#reset.visible-btn {
+    visibility: visible;
+}
+
+footer {
+    color: white;
+    position: absolute;
+    bottom: 10px;
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+}
+
+em {
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+}
+
+a {
+    text-decoration: none;
+    color: #04d9ff;
+}
+
+a:hover {
+    text-shadow: -1px -1px 1px #005d6d, 1px -1px 1px #005d6d, -1px 1px 1px #005d6d, 1px 1px 1px #005d6d;
+}
