@@ -45,9 +45,14 @@ h1 {
     cursor: pointer;
 }
 
-.square:hover, .square:active, .square:focus {
+.square:hover{
     box-shadow: 0px 0px 50px #04d9ff;
     background-color: #04d9ff;
+}
+
+.square:focus {
+    background-color: white;
+    box-shadow: 0 0 0;
 }
 
 #result {
