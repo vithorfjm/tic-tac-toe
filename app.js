@@ -114,6 +114,7 @@ function checkWin(){
     }
     // VERIFICAR EMPATE
     else if (count == 9) {
+        resetBtn.classList.add('visible-btn');
         return 0;
     }
 }
