@@ -45,7 +45,7 @@ h1 {
     cursor: pointer;
 }
 
-.square:hover, .square:active {
+.square:hover, .square:active, .square:focus {
     box-shadow: 0px 0px 50px #04d9ff;
     background-color: #04d9ff;
 }
